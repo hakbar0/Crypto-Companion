@@ -5,6 +5,7 @@ const Header = () => {
     <header>
       <h3>Crypto Companion </h3>
       <h3 className = 'market-cap'>Market Cap: $340,642,147,019</h3>
+      <h3 className = 'btc-dom'>BTC Dominance: 44.3%</h3>
     </header>
   )
 }
