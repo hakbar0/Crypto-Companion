@@ -6,11 +6,14 @@ import '../styles/App.css';
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
-      <div className="App">
-        <Navbar />
+      <div>
+      <header><a href="">Crypto Companion</a></header>
+      <main>
+      <article>Main Content</article>
+      <nav>Side NAv</nav>
+      </main>
+      <footer>Footer</footer>
       </div>
-      </BrowserRouter>
     );
   }
 }
