@@ -17,24 +17,37 @@ class App extends Component {
 
   fetchCoins = () => (
     cc.coinList().then(coinList => {
-      this.setState({ coins: Object.keys(coinList.Data) })
+      this.setState({ coins: Object.keys(coinList.Data).sort() })
     })
   )
 
   render() {
     return (
-      <div id="wrap">
-        <div className="nested-items">
-          <div className="title">
-            <h3>CC</h3>
+      <div>
+        {this.state.coins ?
+          this.state.coins.map(function (coin) { <div> {coin} </div> }) : ''
+
+        }
+        <div id="wrap">
+          <div className="nested-items">
+            <div className="title">
+              <h3>CC</h3>
+            </div>
+            <div className="side-nav">
+
+              {this.state.coins ?
+                this.state.coins.map(function (coin) {
+                  return (
+                    <h3>{coin}</h3>
+                  )
+                })
+                : ''
+              }
+            </div>
           </div>
-          <div className="side-nav">
-        
-          
-          </div>
+          <div className="main"></div>
+          <div className="footer"></div>
         </div>
-        <div className="main"></div>
-        <div className="footer"></div>
       </div>
     )
   }
