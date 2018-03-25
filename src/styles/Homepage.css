@@ -14,13 +14,13 @@ body {
   margin: 0 auto;
   flex-wrap: wrap;
   background: #232323;
+  justify-content: space-between;
 }
 
 .main{
   width: 73%;
   height: 600px;
   background: #d56c6c;
-  margin-left: 10px;
 
 }
 .nested-items {
@@ -46,5 +46,17 @@ body {
   width: 100%;
   height: 190px;
   background: skyblue;
+}
+
+@media all and (max-width: 640px) {
+  .main, .footer {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+  .nested-items {
+    height: 500px;
+    width: 100%;
+  }
 }
 
