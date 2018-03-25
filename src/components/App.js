@@ -38,7 +38,7 @@ class App extends Component {
               {this.state.coins ?
                 this.state.coins.map(function (coin) {
                   return (
-                    <h3>{coin}</h3>
+                  <h5 className = 'coin'>{coin}</h5>
                   )
                 })
                 : ''

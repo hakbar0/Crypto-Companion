@@ -32,7 +32,7 @@ body {
  .title {
   background: yellow;
   width: 100%;
-  height: 25%;
+  height: 150px;
 }
 
 .title h3{
@@ -45,7 +45,12 @@ body {
 .side-nav {
   background: #4add69;
   width: 100%;
-  height: 73%;
+  height: 430px;
+  overflow: scroll;
+}
+
+.side-nav .coin{
+  text-align: center;
 }
 
 .footer {
