@@ -5,7 +5,11 @@ const Homepage = () => {
   return (
     <div id="wrap">
       <div className="nested-items">
-        <div className="title"></div>
+
+        <div className="title">
+        <h3>CC</h3>
+        </div>
+
         <div className="side-nav"></div>
       </div>
       <div className="main"></div>
