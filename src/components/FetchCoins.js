@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { BrowserRouter } from 'react-router-dom';
 import cc from 'cryptocompare';
 
 class FetchCoins extends Component {

@@ -1,0 +1,15 @@
+.images{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+  height: 10%;
+}
+
+.Google, .Twitter, .Reddit{
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  background: white;
+}
+
