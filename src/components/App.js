@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import FetchCoins from './FetchCoins';
+import {FetchCoins} from './FetchCoins';
 import MainPage from './MainPage';
 import '../styles/Homepage.css';
 

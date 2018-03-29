@@ -3,7 +3,8 @@ import cc from 'cryptocompare';
 
 class FetchCoins extends Component {
   state = {
-    coinsList: ''
+    coinsList: '',
+  
   }
   componentDidMount() {
     this.fetchAllCoins();
@@ -15,10 +16,6 @@ class FetchCoins extends Component {
     })
   )
 
-  fetchTest = (input) => {
-    console.log(input)
-  }
-
   render() {
     return (
       this.state.coinsList ?
@@ -26,11 +23,19 @@ class FetchCoins extends Component {
           <ul className="list-group list-group-flush" style={{ border: '10px' }}>
             {this.state.coinsList.map(function (coin) {
               return (
-                <li className="list-group-item" onClick={this.fetchTest.bind(this, coin)} >{coin}</li>
+                <li className="list-group-item" onClick={coinName.bind(this, coin)} >{coin}</li>
               )
             }, this)}</ul></div> : 'Loading..'
     )
   }
 }
 
-export default FetchCoins;
+const coinName = (input) => {
+  cc.price(input || 'BTC', ['USD', 'EUR']).then(prices => {
+    document.getElementsByClassName("crypto")[0].innerText = `${input}'s current price is:`;
+    document.getElementsByClassName("usd")[0].innerText = `$ ${prices.USD}`;
+    document.getElementsByClassName("eur")[0].innerText = `€ ${prices.EUR}`;
+  })
+}
+
+export { FetchCoins, coinName };
