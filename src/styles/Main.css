@@ -13,3 +13,14 @@
   background: white;
 }
 
+main .welcome, .crypto, .eur, .usd{
+  text-align: center;
+  font-size: 30px;
+}
+
+.price {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  width: 90%;
+}
