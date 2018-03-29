@@ -3,7 +3,6 @@ import Reddit from '../images/reddit.png';
 import Twitter from '../images/twitter.png';
 import Google from '../images/google.png';
 import PriceGraph from '../images/pricegraph.jpg';
-import { coinName } from './FetchCoins';
 import cc from 'cryptocompare';
 import '../styles/Main.css';
 

@@ -38,4 +38,4 @@ const coinName = (input) => {
   })
 }
 
-export { FetchCoins, coinName };
+export { FetchCoins };
