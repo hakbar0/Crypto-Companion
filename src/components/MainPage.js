@@ -13,14 +13,14 @@ class MainPage extends Component {
     USD: 'Loading'
   }
 
-  marketcap = () => (
+  coinprice = () => (
     cc.price('BTC', ['USD', 'EUR']).then(prices => {
         this.setState({ EUR: prices.EUR, USD: prices.USD })
       })
   )
 
   componentDidMount() {
-    this.marketcap();
+    this.coinprice();
   }
 
   render() {
