@@ -23,7 +23,7 @@ class FetchCoins extends Component {
           <ul className="list-group list-group-flush" style={{ border: '10px' }}>
             {this.state.coinsList.map(function (coin) {
               return (
-                <li className="list-group-item" onClick={coinName.bind(this, coin)} >{coin}</li>
+                <button><li className="list-group-item" onClick={coinName.bind(this, coin)} >{coin}</li></button>
               )
             }, this)}</ul></div> : 'Loading..'
     )

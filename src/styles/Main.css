@@ -24,4 +24,9 @@ main .welcome, .crypto, .eur, .usd{
   margin-bottom: 10px;
   margin-left: 20px;
   width: 90%;
+  height: 100px;
+}
+
+button{
+  width: 100%;
 }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {FetchCoins} from './FetchCoins';
 import MainPage from './MainPage';
+import Footer from './Footer';
 import '../styles/Homepage.css';
 
 
@@ -30,7 +31,7 @@ class App extends Component {
 
           <div className="main"> <MainPage /></div>
 
-          <div className="footer"></div>
+          <div className="footer"><Footer /></div>
 
         </div>
       </div>
