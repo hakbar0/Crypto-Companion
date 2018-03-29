@@ -15,20 +15,20 @@ class FetchCoins extends Component {
     })
   )
 
-fetchTest = (input) => {
-  console.log(input)
-}
+  fetchTest = (input) => {
+    console.log(input)
+  }
 
   render() {
     return (
       this.state.coinsList ?
-      <div className="card" style={{width: '100%', textAlign: 'center', border: '10px'}}>
-        <ul className="list-group list-group-flush" style={{border: '10px'}}>
-        {this.state.coinsList.map(function (coin) {
-          return (
-            <li className="list-group-item" onClick={this.fetchTest.bind(this, coin)} >{coin}</li>
-          )
-        },this)}</ul></div> : 'Loading..'
+        <div className="card" style={{ width: '100%', textAlign: 'center', border: '10px' }}>
+          <ul className="list-group list-group-flush" style={{ border: '10px' }}>
+            {this.state.coinsList.map(function (coin) {
+              return (
+                <li className="list-group-item" onClick={this.fetchTest.bind(this, coin)} >{coin}</li>
+              )
+            }, this)}</ul></div> : 'Loading..'
     )
   }
 }
