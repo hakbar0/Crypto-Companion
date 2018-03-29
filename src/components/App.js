@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import cc from 'cryptocompare';
+import FetchCoins from './FetchCoins';
 import '../styles/Homepage.css';
 
 
@@ -10,16 +10,6 @@ class App extends Component {
   state = {
     coins: ''
   }
-
-  componentDidMount() {
-    this.fetchCoins();
-  }
-
-  fetchCoins = () => (
-    cc.coinList().then(coinList => {
-      this.setState({ coins: Object.keys(coinList.Data).sort() })
-    })
-  )
 
   render() {
     return (
@@ -34,15 +24,7 @@ class App extends Component {
               <h3>CC</h3>
             </div>
             <div className="side-nav">
-
-              {this.state.coins ?
-                this.state.coins.map(function (coin) {
-                  return (
-                  <h5 className = 'coin'>{coin}</h5>
-                  )
-                })
-                : ''
-              }
+            <FetchCoins />
             </div>
           </div>
           <div className="main"></div>
