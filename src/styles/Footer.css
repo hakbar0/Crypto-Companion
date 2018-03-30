@@ -1,8 +1,19 @@
 .jumbotron{
   height: 100%;
   text-align: center;
+  background: none;
+  color: rgb(158, 233, 18);
 }
 
 .display-3{
   font-size: 20px;
+  background: none;
+}
+
+.container{
+  background: none;
+}
+
+.lead{
+  background: none;
 }

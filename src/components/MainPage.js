@@ -27,15 +27,8 @@ class MainPage extends Component {
     return (
 
       <main>
-        <div className='images'>
-          <img src={Google} className='Google' alt='Google' />
-          <img src={Twitter} className='Twitter' alt='Twitter' />
-          <img src={Reddit} className='Reddit' alt='binanace' />
-        </div>
 
         <h3 className='welcome'>Welcome, Let's see cryptocurrency is doing today.</h3>
-
-
 
           <div class="card crypto-card" style={{ width: "18rem;" }}>
             <div class="card-body">
