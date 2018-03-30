@@ -34,7 +34,6 @@ const coinName = (input) => {
   cc.price(input || 'BTC', ['USD', 'EUR']).then(prices => {
     document.getElementsByClassName("crypto")[0].innerText = `${input}'s current price is:`;
     document.getElementsByClassName("usd")[0].innerText = `$ ${prices.USD}`;
-    document.getElementsByClassName("eur")[0].innerText = `€ ${prices.EUR}`;
   })
 }
 

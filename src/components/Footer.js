@@ -1,14 +1,7 @@
 import React, { Component } from 'react';
 import Twit from 'twit';
 import config from '../config/config.js';
-
-const T = new Twit({
-  consumer_key: config.CONSUMER_KEY,
-  consumer_secret: config.CONSUMER_SECRET,
-  access_token: config.ACCESS_TOKEN,
-  access_token_secret: config.ACCESS_TOKEN_SECRET,
-  timeout_ms: 60 * 1000 
-})
+import '../styles/Footer.css';
 
 
 class Footer extends Component {
@@ -16,16 +9,17 @@ class Footer extends Component {
     tweets: ''
   }
 
-  componentDidMount() {
-    T.get('search/tweets', { q: 'banana since:2011-07-11', count: 100 }, function(err, data, response) {
-      console.log(data)
-    })
-}
-
 
   render() {
     return (
-      <h1>hello</h1>
+
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-3">Crypto Companion</h1>
+          <p class="lead">© 2018 Lasting Spark</p>
+        </div>
+      </div>
+
     )
   }
 }

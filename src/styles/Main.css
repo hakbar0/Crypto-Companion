@@ -13,8 +13,7 @@
   background: white;
 }
 
-main .welcome, .crypto, .eur, .usd{
-  margin-top: 20px;
+main .welcome, .crypto, .usd{
   text-align: center;
   font-size: 30px;
 }
@@ -29,4 +28,15 @@ main .welcome, .crypto, .eur, .usd{
 
 button{
   width: 100%;
+}
+
+.welcome{
+  margin-top: 100px;
+}
+
+
+.crypto-card{
+  width: 80%;
+  margin-top: 15%;
+  margin-left: 10%;
 }

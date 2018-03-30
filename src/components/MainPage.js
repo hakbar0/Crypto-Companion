@@ -15,8 +15,8 @@ class MainPage extends Component {
 
   coinprice = () => (
     cc.price('BTC', ['USD', 'EUR']).then(prices => {
-        this.setState({ EUR: prices.EUR, USD: prices.USD })
-      })
+      this.setState({ EUR: prices.EUR, USD: prices.USD })
+    })
   )
 
   componentDidMount() {
@@ -33,13 +33,17 @@ class MainPage extends Component {
           <img src={Reddit} className='Reddit' alt='binanace' />
         </div>
 
-        <h3 className='welcome'>Welcome, Let's see how Bitcoin is doing today.</h3>
+        <h3 className='welcome'>Welcome, Let's see cryptocurrency is doing today.</h3>
 
-        <img src={PriceGraph} className='price' alt='price' />
 
-        <h3 className='crypto'> Bitcoin's current price is:</h3>
-        <h3 className='eur'> €{this.state.EUR}</h3>
-        <h3 className='usd'>${this.state.USD}</h3>
+
+          <div class="card crypto-card" style={{ width: "18rem;" }}>
+            <div class="card-body">
+              <h5 class="card-title crypto">Bitcoin's current price is:</h5>
+              <p class="card-text usd">${this.state.USD}</p>
+            </div>
+          </div>
+ 
       </main>
     )
   }
